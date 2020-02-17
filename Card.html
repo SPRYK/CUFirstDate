@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body onload="myStart()">
+
+    <div style="position:static; width: 100%; height: 70px">
+        <div style="position: absolute">
+                  <img src="images/cunex.png" width="100px">
+        </div>
+        <divdiv style="position: absolute; width:100%; left: 50%; transform: translate(-50%, 0); top:1.6em;">
+                    
+            <div id='Success' style="height:auto; color:#3B565C; text-align: center; padding-bottom: 0.5em; font-size: 1.6em" >
+                    <b>Successful! </b><img src="images/103.png" width="35px">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card">
+
+        <div style="height: 1.3em"></div>
+        <div id="avatar" style=" height:8.5em; width:8.5em; margin: auto; "></div>
+        <div style="height: 2em"></div>
+        <!-- <div id="name" style="text-align: center"></div> -->
+        <div style="background-image:url('images/bg.png'); background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        line-height: 2.8em; ">
+            <div style="vertical-align: middle" id="nickname"></div>
+
+        </div>
+        <div id="fac"></div>
+        <div id="interest">Loading...</div>
+        <div style="height: 1.5em"></div>
+        <div id="qrcodeCanvas" style=" height:8.5em; width:8.5em; margin: auto; "></div>
+        <div style="height: 1.5em"></div>
+    </div>
+    <div style="height: 10%; text-align: center; margin-top: 1.5em">
+        <button class="interest-btn" value="0" onclick="OpenMap()" id="btnMap">แผนที่</button>
+
+        <button class="interest-btn" value="0" onclick="CustomConfirm.show('ก่อนออกอย่าลืมเซฟรูปนี้เก็บไว้นะ เดี๋ยวข้อมูลจะหาย',deleteCookie)" id="sport">
+                ลงชื่อออก</button>
+
+        <div id='freezeLayer' class='freeze-layer' style="display: none;"></div>
+        <div id='dialogCont' class='dlg-container'>
+            <div class='dlg-header'>ต้องการจะลงชื่อออก ?</div>
+            <div id='dlgBody' class='dlg-body'></div>
+            <div class='dlg-footer'>
+                <a onclick='CustomConfirm.okay();'>ตกลง</a>
+                <a onclick='CustomConfirm.close()'>ยกเลิก</a>
+            </div>
+        </div>        
+    </div>
+    
+    
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <script src="js/Card.js"> </script>
+
+</body>
+
+</html>

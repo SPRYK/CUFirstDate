@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+body {
+    font-family:"Kanit","Tahoma";
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    /* display: flex; */
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid black;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #3B565C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: 3em;
+    /* opacity: 0.8; */
+    font-family:"Kanit","Tahoma";
+    border-radius: 0.6em; 
+    margin-bottom: 3em;
+    font-size: 1em;
+   
+    
+
+}
+
+
+.interest-btn {
+    background-color: #90E2DE;
+    color: #3B565C;
+    font-family:"Kanit","Tahoma";
+    /* padding: 12px 16px; */
+    font-size: 0.8em;
+    border: 0px;
+    cursor: pointer;
+    opacity: 0.8;
+    text-align: left;
+    /* margin-bottom: 15px; */
+}
+
+
+.dlg-container {
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    background: #ffffff;
+    padding: 10px;
+    border: 2px solid #dddddd;
+    box-shadow: 1px 1px 5px 1px #cccccc;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    z-index: 2;
+}
+
+.dlg-header {
+    padding: 10px;
+    font-weight: bold;
+    background: #3B565C;
+    color: #f6f7f8;
+}
+
+.dlg-body {
+    padding: 10px;
+    line-height: 30px;
+}
+
+.dlg-footer {
+    text-align: center;
+    background: #f5f5f2;
+    padding: 3px 0;
+}
+
+.dlg-footer a{
+    display: inline-block;
+    width: 100px;
+    padding: 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.dlg-footer a:active{
+    box-shadow: inset 2px 2px 4px 0 #cccccc;
+    color: #666666;
+}
+
+.freeze-layer{
+    position: fixed;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
